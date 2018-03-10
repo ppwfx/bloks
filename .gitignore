@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+
+/bin
+/include
+/lib
+/man
+pip-selfcheck.json
+pyvenv.cfg
+*.pyc

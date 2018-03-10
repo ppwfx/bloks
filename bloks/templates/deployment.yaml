@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ _name }}
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        deployment: {{ _name }}
+    spec:
+      containers:
+      - name: {{ _name }}
+        image: {{ _image }}
+        imagePullPolicy: IfNotPresent
